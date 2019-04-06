@@ -1,6 +1,9 @@
 # vue-safa-router
 支持滑动返回的vue-router扩展 , 为PWA应用和webview提供转场效果和手势返回的功能
 
+# 效果
+<video src='demo/demo.mp4' autoplay></video>
+
 # demo
 [https://safagwq.github.io/vue-safa-router/demo/dist/](https://safagwq.github.io/vue-safa-router/demo/dist/)
 
@@ -23,7 +26,7 @@
 ```
     <style>
         *{margin:0;  padding:0;  box-sizing:border-box;  }
-        .Page{min-height:100vh;  }
+        .Page-scroller{min-height:100vh;  }
     </style>
 
     <template>

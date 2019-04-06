@@ -1,41 +1,13 @@
 {
-  "_from": "vue-safa-router",
-  "_id": "vue-safa-router@0.1.4",
-  "_inBundle": false,
-  "_integrity": "sha512-TIcHSD4S7DQ52P8C66NTR6Xouwy5GsndgP4xmrZ5KPqQhodqRMXseXUbDI5LJjlImBIUmOTnsyFLFgvItzYQqw==",
-  "_location": "/vue-safa-router",
-  "_phantomChildren": {},
-  "_requested": {
-    "type": "tag",
-    "registry": true,
-    "raw": "vue-safa-router",
-    "name": "vue-safa-router",
-    "escapedName": "vue-safa-router",
-    "rawSpec": "",
-    "saveSpec": null,
-    "fetchSpec": "latest"
-  },
-  "_requiredBy": [
-    "#USER",
-    "/"
-  ],
-  "_resolved": "https://registry.npmjs.org/vue-safa-router/-/vue-safa-router-0.1.3.tgz",
-  "_shasum": "8fc554dd878bbdd362f900435bf8745f7b70146b",
-  "_spec": "vue-safa-router",
-  "_where": "/Users/safa/git/vvv",
-  "author": {
-    "name": "safagwq"
-  },
-  "bugs": {
-    "url": "https://github.com/safagwq/vue-app-router/issues"
-  },
-  "bundleDependencies": false,
-  "dependencies": {
-    "animejs": "^3.0.1"
-  },
-  "deprecated": false,
+  "name": "vue-safa-router",
+  "version": "0.1.4",
   "description": "支持滑动返回的vue-router扩展",
-  "homepage": "https://github.com/safagwq/vue-app-router#readme",
+  "main": "js/index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/safagwq/vue-app-router.git"
+  },
   "keywords": [
     "vue-router",
     "app",
@@ -45,13 +17,13 @@
     "slide",
     "safagwq"
   ],
-  "license": "ISC",
-  "main": "js/index.js",
-  "name": "vue-safa-router",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/safagwq/vue-app-router.git"
+  "dependencies": {
+    "animejs": "^3.0.1"
   },
-  "scripts": {},
-  "version": "0.1.3"
+  "author": "safagwq",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/safagwq/vue-app-router/issues"
+  },
+  "homepage": "https://github.com/safagwq/vue-app-router#readme"
 }

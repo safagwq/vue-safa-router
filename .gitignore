@@ -17,4 +17,5 @@ yarn-error.log*
 *.ntvs*
 *.njsproj
 *.sln
+*.mp4
 *.sw*
