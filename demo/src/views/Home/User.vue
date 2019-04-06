@@ -5,5 +5,7 @@
         
         user page
 
+        <router-link to='/about' class='link flex acenter'>about</router-link>
+
     </div>
 </template>

@@ -59,7 +59,7 @@
 
                 slideObj.el.style.transform = `translateX(${ slideObj.touchData.changeX }px)`
                 if( views.list[views.lastIndex-1] ){
-                    views.list[views.lastIndex-1].el.style.transform = `translateX(${ -views.width/2 + slideObj.touchData.changeX/2  }px)`
+                    views.list[views.lastIndex-1].el.style.transform = `translateX(${ -window.innerWidth/2 + slideObj.touchData.changeX/2  }px)`
                 }
             },
             end(e,slideObj){
@@ -89,7 +89,7 @@
 
                         anime({
                             targets : moveEl,
-                            translateX : [-views.width/2],
+                            translateX : [-window.innerWidth/2],
                             duration : 200,
                             easing : 'easeOutSine',
                             complete : function (){
@@ -103,7 +103,7 @@
 
 
             beforeEnter(el) {
-                var findIndex = getNowIndexInList()
+                var findIndex = getNowIndexInList(el)
 
                 if(views.list.length > history.length){
                     views.list.splice(history.length-1).forEach(destroyVNode)
@@ -161,7 +161,7 @@
 
     function initView(el){
 
-        var findIndex = getNowIndexInList()
+        var findIndex = getNowIndexInList(el)
         views.lastIndex = findIndex
 
         if(views.moveType=='forward'){
@@ -209,7 +209,7 @@
     function forwardLeave(el,done){
         anime({
             targets : el,
-            translateX : [-views.width/2],
+            translateX : [-window.innerWidth/2],
             duration : 300,
             easing : 'easeOutSine',
             complete : function (){
@@ -243,7 +243,7 @@
         el.style.zIndex=1
         anime({
             targets : el,
-            translateX : [views.width],
+            translateX : [window.innerWidth],
             duration : 300,
             easing : 'easeOutSine',
             complete : function (){
@@ -295,7 +295,12 @@
         document.body.scrollTop= el._scrollTop
     }
     
-    function getNowIndexInList(){
+    function getNowIndexInList(el){
+        var index=views.list.findIndex((item)=>item.el==el)
+        if( index!=-1 ){
+            return index
+        }
+        
         return views.list.findIndex(item=>{
             return history.state.key==item.key
         })

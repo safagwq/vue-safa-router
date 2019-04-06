@@ -79,8 +79,7 @@ const views={
     list : [],
     lastIndex : 0,
     moveType : 'forward',
-    vNodes : {},
-    width : window.innerWidth,
+    vNodes : {}
 }
 
 window.views=views
