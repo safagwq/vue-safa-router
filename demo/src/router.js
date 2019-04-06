@@ -5,6 +5,10 @@ import Home from './views/Home/Home.vue'
 import Index from './views/Home/Index.vue'
 import User from './views/Home/User.vue'
 
+import About from './views/About.vue'
+import List from './views/List.vue'
+import Content from './views/Content.vue'
+
 Vue.use(Router)
 
 export default new Router({
@@ -27,15 +31,15 @@ export default new Router({
 
         {
             path: '/about',
-            component: () => import('./views/About.vue')
+            component: About
         },
         {
             path: '/list',
-            component: () => import('./views/List.vue')
+            component: List
         },
         {
             path: '/content',
-            component: () => import('./views/Content.vue')
+            component: Content
         },
     ]
 })

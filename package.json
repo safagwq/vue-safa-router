@@ -1,6 +1,6 @@
 {
   "name": "vue-safa-router",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "支持滑动返回的vue-router扩展",
   "main": "js/index.js",
   "scripts": {
