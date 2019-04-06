@@ -1,7 +1,7 @@
 10<style>
 
     .Page{background:#fff;  box-shadow:0 0 15px rgba(0,0,0,0.15);  }
-    .Page-scroller{padding-top:64px;  }
+    .Page-scroller{}
 
     .Page[cache='true']{position:fixed;  top:0;  left:0;  height:100%;  width:100%;  z-index:-1;  transform:translateX(0);  }
     .Page[cache='true']>.Page-scroller{position:absolute;  width:100%;  min-height:100%;  top:0;  left:0;  }

@@ -2,7 +2,12 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 
-Vue.config.productionTip = false
+import VueSafaRouter from 'vue-safa-router'
+VueSafaRouter.use(router)
+
+
+import HeaderTemp from './components/HeaderTemp.vue'
+Vue.component('HeaderTemp',HeaderTemp)
 
 new Vue({
   router,

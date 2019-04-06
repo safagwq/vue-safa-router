@@ -6,8 +6,6 @@ var configs={
 
 class Slide{
 
-    static configs=configs
-
     constructor(el,events) {
         this.el = el
         this.events = events || {}
@@ -74,6 +72,8 @@ class Slide{
     }
 }
 
+
+Slide.configs=configs
 
 
 

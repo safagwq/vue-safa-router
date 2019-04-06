@@ -17,9 +17,12 @@
     "滑动返回",
     "手势",
     "slide",
-    "safa"
+    "safagwq"
   ],
-  "author": "safa",
+  "dependencies": {
+    "animejs": "^3.0.1"
+  },
+  "author": "safagwq",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/safagwq/vue-app-router/issues"

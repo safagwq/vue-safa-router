@@ -12,7 +12,7 @@
     import Vue from 'vue'
     import router from './router'
 
-    import VueAppRouter from './vue-app-router'
+    import VueAppRouter from 'vue-app-router'
     VueAppRouter.use(router)
 ```
 
