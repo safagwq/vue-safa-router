@@ -1,6 +1,9 @@
 # vue-safa-router
 支持滑动返回的vue-router扩展 , 为PWA应用和webview提供转场效果和手势返回的功能
 
+# demo
+[https://safagwq.github.io/vue-safa-router/demo/dist/](https://safagwq.github.io/vue-safa-router/demo/dist/)
+
 ## 下载安装
 ```
     npm install vue-safa-router -S
