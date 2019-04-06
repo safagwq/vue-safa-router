@@ -1,0 +1,28 @@
+{
+  "name": "vue-safa-router",
+  "version": "0.1.0",
+  "description": "支持滑动返回的vue-router扩展",
+  "main": "js/index.js",
+  "scripts": {
+    
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/safagwq/vue-app-router.git"
+  },
+  "keywords": [
+    "vue-router",
+    "app",
+    "滑动",
+    "滑动返回",
+    "手势",
+    "slide",
+    "safa"
+  ],
+  "author": "safa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/safagwq/vue-app-router/issues"
+  },
+  "homepage": "https://github.com/safagwq/vue-app-router#readme"
+}
