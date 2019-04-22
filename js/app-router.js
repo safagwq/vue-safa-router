@@ -128,20 +128,26 @@ const appRouter={
 
     },
     replaceHome(path){
-        location.replace('#'+path)
-        views.nextPath=path
-        history.go( -(views.list.length-1) )
+            
+        router.push(path)
 
+        setTimeout(()=>{
 
-        var newList=[views.list.pop()]
+            nextPath = path
+            history.go( -(views.list.length-1) )
+            setTimeout(()=>{
+                nextPath=''
+            },100)
 
-        views.list.forEach((data)=>{
-            destroyVNode(data)
-        })
+            var newList=[views.list.pop()]
 
-        views.list=newList
+            views.list.forEach((data)=>{
+                destroyVNode(data)
+            })
 
-        destroyVNode( views.list.pop() )
+            views.list=newList
+
+        },500)
     },
     replace(path){
         location.replace('#'+path)
